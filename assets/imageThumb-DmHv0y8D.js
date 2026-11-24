@@ -1,0 +1,1 @@
+function e(t){try{const a=new URL(t);return a.hostname.includes("unsplash")||a.hostname.endsWith("unsplash.com")}catch{return!1}}function n(t,a=100){if(!t||!e(t))return t;try{const s=new URL(t);return s.searchParams.set("w",String(a)),s.searchParams.set("q","50"),s.searchParams.set("auto","format"),s.searchParams.set("fm","webp"),s.toString()}catch{return t}}export{n as t};
